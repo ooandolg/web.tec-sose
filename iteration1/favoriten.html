@@ -2,47 +2,54 @@
 <html>
 <head>
   <title>Meine Lieblingsartikeln</title>
+
+  
+  <link rel="icon" type="logo" href="img/Logo.jpeg">
+  <!--für die icon-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="logo" href="../img/Logo.jpeg">
 
 </head>
 <body>
     <header>
         <nav>
           <a href="startseite.html">
-            <img src="../img/Logo.jpeg" alt="Logo">
+            <img src="img/Logo.jpeg" alt="Logo">
           </a>
           <ul>
-            <li><a href="startseite.html">Startseite</a></li>
-            <li><a href="favoriten.html">Favoriten</a></li>
+            <li><a href="startseite.html">startseite</a></li>
+            <li><a href="favoriten.html">favoriten</a></li>
           </ul>
         </nav>
       </header>
 
+      <h1 id="h1fav">Meine Lieblingsartikeln</h1>
 
-      <h1>Meine Lieblingsartikeln</h1>
-
-      <table class="overview-table">
+      <table class="table">
         <thead>
           <tr>
             <th>Artikelüberschrift</th>
             <th>Autor</th>
             <th>Bildvorschau</th>
             <th>Veröffentlichungsdatum</th>
-            <th>Link to Artikel</th>
+            <th>Löschen</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><a href="artikel1.html">Finanzen im Studium</a></td>
             <td>Anastassia Schmidt</td>
-            <td><img src="../img/Artikel1übersicht.jpeg" alt="Bild" height="52" width="52">
+            <td><img src="img/Artikel1übersicht.jpeg" alt="Bild" height="52" width="52">
             <td>May 1, 2023</td>
-            <td><a href="artikel1.html">Artikel lesen</a></td>
+            <!--link=<a>-->
+              <td><span class="glyphicon glyphicon-trash"></span></td>
           </tr>
             
-          <!-- Add more rows for additional favorite articles -->
+          
         </tbody>
       </table>
+      
+      
+    
 </body>
 </html>
