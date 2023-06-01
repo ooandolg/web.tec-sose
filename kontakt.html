@@ -1,0 +1,79 @@
+!DOCTYPE html>
+<html>
+<head>
+  <title>kontakt - My Lifestyle Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="logo" href="img/Logo.jpeg">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="startseite.html">
+        <img src="img/Logo.jpeg" alt="Logo">
+      </a>
+      <ul>
+        <li><a href="startseite.html">startseite</a>|</li>       
+        <li><a href="favoriten.html">favoriten</a>|</li>
+        <li><a href="impressum.html">impressum</a>|</li>
+        <li><a href="kontakt.html">kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <fieldset>
+      <legend>Kontakt</legend>
+    <form id="kontakt-form" action="#" method="POST">
+      <table>
+        <tr>
+          <td><label for="first-name">Vorname</label></td>
+          <td><input type="text" id="first-name" name="first-name" maxlength="40" minlength="2" pattern="[a-zA-Z]+"></td>
+        </tr>
+        <tr>
+          <td><label for="last-name">Nachname</label></td>
+          <td><input type="text" id="last-name" name="last-name" maxlength="40"  minlength="2" pattern="[a-zA-Z]+"></td>
+        </tr>
+        <tr>
+          <td><label for="email">E-Mail*</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="article-number">ArtiKelnummer</label></td>
+          <td><input type="text" id="article-number" name="article-number" pattern="[a-z]{3}|[0-9]{8}|[0-9]{7}p" maxlength="8" required></td>
+        </tr>
+        <tr>
+          <td><label for="betreff">Betreff*</label></td>
+          <td><input type="text" id="betreff" name="betreff" maxlength="40" minlength="2" pattern="[a-zA-Z]+" required></td>
+        </tr>
+        <tr>
+          <td> <label for="category">Kategorie</label></td>
+          <td>
+            <select id="category" name="category" required>
+              <option value="">Select a category</option>
+              <option value="Category 1">Mode</option>
+              <option value="Category 2">Finanzen</option>
+              <option value="Category 3">Essen</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="description">Beschreibung*</label></td>
+          <td><textarea id="description" name="description" rows="15" cols="40" maxlength="400" required></textarea></td>
+        </tr>
+      </table>
+      <em>*Pflichtfelder</em>
+    </fieldset>
+    <fieldset>
+      <div class="button-group">
+        <input type="reset" value="Formular löschen">
+        <input type="submit" value="Senden">
+      </div>
+    </form>
+  </fieldset>
+  </main>
+
+  <footer>
+    <p>&copy; Name Author 1, Name Author 2 – 2023</p>
+  </footer>
+</body>
+</html>
